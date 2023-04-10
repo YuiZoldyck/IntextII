@@ -1,5 +1,6 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "DsVMP+xDIOt4cNQfyoFTG5aB0L7LMxMMYGPcqLW0Zf8XNvE89w9ICEUZPQJTc6+z4YBnm3zqYK1Y9xJr80yHpA==",
   "success": true,
   "projectFilePath": "/Users/kateopager/IntextII/backend/IntextBackend/IntextBackend.csproj",
@@ -10,6 +11,18 @@
     "/Users/kateopager/.nuget/packages/swashbuckle.aspnetcore.swagger/6.2.3/swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
     "/Users/kateopager/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.2.3/swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
     "/Users/kateopager/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.2.3/swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+=======
+  "dgSpecHash": "Nuv1TdINEHR61hQEBPm6tarlitHzRRTLSrnPoVcN1yGh/n+RkEz6Z8x3pafHJ3PQ9XFkssfmRO98C68NEyHgbQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\autum\\OneDrive\\Documents\\Winter2023\\Intex\\IntextII\\backend\\IntextBackend\\IntextBackend.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\autum\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\autum\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\autum\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\autum\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\autum\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\autum\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+>>>>>>> 2f2e95cad5cf5fc7146d8dd372a2d3209e73c593
   ],
   "logs": []
 }
