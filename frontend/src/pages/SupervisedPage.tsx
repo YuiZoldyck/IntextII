@@ -1,7 +1,7 @@
 export function SupervisedPage() {
   return (
     <>
-      <h1>Supervised</h1>
+      <p>Here is the supervised</p>
     </>
   );
 }
