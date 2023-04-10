@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1705.2
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntextBackend", "IntextBackend.csproj", "{98BF6904-265B-437F-94EF-03329CC1F7C0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{98BF6904-265B-437F-94EF-03329CC1F7C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98BF6904-265B-437F-94EF-03329CC1F7C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98BF6904-265B-437F-94EF-03329CC1F7C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98BF6904-265B-437F-94EF-03329CC1F7C0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C43778C3-17B4-4742-8CF8-B9442DC964BC}
+	EndGlobalSection
+EndGlobal
