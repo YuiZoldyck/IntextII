@@ -4,12 +4,19 @@
 /node_modules
 /.pnp
 .pnp.js
+.vs
 
 # testing
 /coverage
 
 # production
 /build
+
+###############
+# Directories #
+###############
+bin/
+obj/
 
 # misc
 .DS_Store
