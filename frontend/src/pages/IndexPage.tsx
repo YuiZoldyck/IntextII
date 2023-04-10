@@ -14,7 +14,12 @@ export function IndexPage() {
         />
         <br />
         <br />
-        <p>Fag el-Gamous is </p>
+        <p style={{ width: "55%", margin: "auto" }}>
+          Welcome to Fag El-Gamous, a website dedicated to Egyptian
+          archeological discoveries! Feel free to explore the many incredible
+          findings and information provided by BYU professors and students.
+        </p>
+        <br />
         <p>
           Click <a href="https://egypt.byu.edu/p/Arcgis">here</a> to view a 3D
           rendering of the dig sites!
