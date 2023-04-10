@@ -31,6 +31,11 @@ const Navbar = () => {
             Login
           </NavLink>
         </li>
+        <li className="nav-item">
+          <NavLink to="/privacy" className="nav-link">
+            Privacy
+          </NavLink>
+        </li>
       </ul>
     </nav>
   );

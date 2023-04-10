@@ -6,6 +6,7 @@ import { SupervisedPage } from "../pages/SupervisedPage";
 import { UnsupervisedPage } from "../pages/UnsupervisedPage";
 import "./App.css";
 import Navbar from "./Navbar";
+import { PrivacyPage } from "../pages/PrivacyPage";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/burial" element={<BurialPage />}></Route>
           <Route path="/supervised" element={<SupervisedPage />}></Route>
           <Route path="/unsupervised" element={<UnsupervisedPage />}></Route>
+          <Route path="/privacy" element={<PrivacyPage />}></Route>
         </Routes>
       </BrowserRouter>
     </React.Fragment>
