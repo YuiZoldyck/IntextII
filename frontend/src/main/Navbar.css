@@ -1,17 +1,18 @@
 .color-nav {
-  background-color: rgb(0,46,93);
-  font-family:"Public Sans",Helvetica,Arial,sans-serif; 
+  background-color: rgb(0, 46, 93);
+  font-family: "Public Sans", Helvetica, Arial, sans-serif;
   font-size: medium;
 }
 
 .navbarspecial {
+  padding-top: 10px;
   text-align: center;
   font-weight: bold;
-  font-family:sans-serif ;
+  font-family: sans-serif;
   color: white;
-  background-color:rgb(0,46,93);
+  background-color: rgb(0, 46, 93);
   overflow: hidden;
-  position: fixed;
+  position: relative;
   bottom: 0;
   width: 100%;
 }

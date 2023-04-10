@@ -7,6 +7,7 @@ import { UnsupervisedPage } from "../pages/UnsupervisedPage";
 import { LoginPage } from "../pages/LoginPage";
 import "./App.css";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/unsupervised" element={<UnsupervisedPage />}></Route>
           <Route path="/login" element={<LoginPage />}></Route>
         </Routes>
+        <Footer />
       </BrowserRouter>
     </React.Fragment>
   );
