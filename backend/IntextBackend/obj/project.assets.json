@@ -224,24 +224,26 @@
     ]
   },
   "packageFolders": {
-    "/Users/betasan/.nuget/packages/": {}
+    "C:\\Users\\autum\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/betasan/BYU/Winter 2023/IntextII/backend/IntextBackend/IntextBackend.csproj",
+      "projectUniqueName": "C:\\Users\\autum\\OneDrive\\Documents\\Winter2023\\Intex\\IntextII\\backend\\IntextBackend\\IntextBackend.csproj",
       "projectName": "IntextBackend",
-      "projectPath": "/Users/betasan/BYU/Winter 2023/IntextII/backend/IntextBackend/IntextBackend.csproj",
-      "packagesPath": "/Users/betasan/.nuget/packages/",
-      "outputPath": "/Users/betasan/BYU/Winter 2023/IntextII/backend/IntextBackend/obj/",
+      "projectPath": "C:\\Users\\autum\\OneDrive\\Documents\\Winter2023\\Intex\\IntextII\\backend\\IntextBackend\\IntextBackend.csproj",
+      "packagesPath": "C:\\Users\\autum\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\autum\\OneDrive\\Documents\\Winter2023\\Intex\\IntextII\\backend\\IntextBackend\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/betasan/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\autum\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -271,7 +273,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -283,7 +286,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/6.0.106/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
