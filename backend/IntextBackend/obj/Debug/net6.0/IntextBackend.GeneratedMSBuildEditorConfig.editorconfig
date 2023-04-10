@@ -9,9 +9,17 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = IntextBackend
 build_property.RootNamespace = IntextBackend
+<<<<<<< HEAD
+build_property.ProjectDir = /Users/kateopager/IntextII/backend/IntextBackend/
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/kateopager/IntextII/backend/IntextBackend
+=======
 build_property.ProjectDir = c:\Users\autum\OneDrive\Documents\Winter2023\Intex\IntextII\backend\IntextBackend\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
 build_property.MSBuildProjectDirectory = c:\Users\autum\OneDrive\Documents\Winter2023\Intex\IntextII\backend\IntextBackend
+>>>>>>> 2f2e95cad5cf5fc7146d8dd372a2d3209e73c593
 build_property._RazorSourceGeneratorDebug = 
