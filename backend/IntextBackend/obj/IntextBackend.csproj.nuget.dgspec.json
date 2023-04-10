@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\autum\\OneDrive\\Documents\\Winter2023\\Intex\\IntextII\\backend\\IntextBackend\\IntextBackend.csproj": {}
+    "c:\\Users\\autum\\OneDrive\\Documents\\Winter2023\\Intex\\IntextII\\backend\\IntextBackend\\IntextBackend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\autum\\OneDrive\\Documents\\Winter2023\\Intex\\IntextII\\backend\\IntextBackend\\IntextBackend.csproj": {
+    "c:\\Users\\autum\\OneDrive\\Documents\\Winter2023\\Intex\\IntextII\\backend\\IntextBackend\\IntextBackend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\autum\\OneDrive\\Documents\\Winter2023\\Intex\\IntextII\\backend\\IntextBackend\\IntextBackend.csproj",
+        "projectUniqueName": "c:\\Users\\autum\\OneDrive\\Documents\\Winter2023\\Intex\\IntextII\\backend\\IntextBackend\\IntextBackend.csproj",
         "projectName": "IntextBackend",
-        "projectPath": "C:\\Users\\autum\\OneDrive\\Documents\\Winter2023\\Intex\\IntextII\\backend\\IntextBackend\\IntextBackend.csproj",
+        "projectPath": "c:\\Users\\autum\\OneDrive\\Documents\\Winter2023\\Intex\\IntextII\\backend\\IntextBackend\\IntextBackend.csproj",
         "packagesPath": "C:\\Users\\autum\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\autum\\OneDrive\\Documents\\Winter2023\\Intex\\IntextII\\backend\\IntextBackend\\obj\\",
+        "outputPath": "c:\\Users\\autum\\OneDrive\\Documents\\Winter2023\\Intex\\IntextII\\backend\\IntextBackend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\autum\\AppData\\Roaming\\NuGet\\NuGet.Config",
