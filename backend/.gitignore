@@ -1,1 +1,11 @@
 .vs/
+
+# git submodule update --remote --merge
+# git add .
+# git commit -m "Update submodule reference"
+# git push
+
+# These commands will update the submodule reference in the parent repository to the latest commit in the submodule repository, and then you can push your changes in the parent repository without affecting the submodule.
+
+
+
