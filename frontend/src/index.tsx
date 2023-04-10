@@ -19,3 +19,5 @@ root.render(
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 // Test Comment
 reportWebVitals();
+
+//Kate is awesome
