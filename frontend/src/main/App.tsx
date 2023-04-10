@@ -4,6 +4,7 @@ import { IndexPage } from "../pages/IndexPage";
 import { BurialPage } from "../pages/BurialPage";
 import { SupervisedPage } from "../pages/SupervisedPage";
 import { UnsupervisedPage } from "../pages/UnsupervisedPage";
+import { LoginPage } from "../pages/LoginPage";
 import "./App.css";
 import Navbar from "./Navbar";
 
@@ -17,6 +18,7 @@ function App() {
           <Route path="/burial" element={<BurialPage />}></Route>
           <Route path="/supervised" element={<SupervisedPage />}></Route>
           <Route path="/unsupervised" element={<UnsupervisedPage />}></Route>
+          <Route path="/login" element={<LoginPage />}></Route>
         </Routes>
       </BrowserRouter>
     </React.Fragment>
