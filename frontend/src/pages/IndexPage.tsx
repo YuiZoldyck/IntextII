@@ -15,6 +15,12 @@ export function IndexPage() {
         <br />
         <br />
         <p>Fag el-Gamous is </p>
+        <p>
+          Click <a href="https://egypt.byu.edu/p/Arcgis">here</a> to view a 3D
+          rendering of the dig sites!
+          <br />
+          Click <a href="burial">here</a> to view all burials!
+        </p>
       </div>
     </React.Fragment>
   );
