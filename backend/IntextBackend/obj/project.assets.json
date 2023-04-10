@@ -224,19 +224,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/betasan/.nuget/packages/": {}
+    "/Users/kateopager/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/betasan/BYU/Winter 2023/IntextII/backend/IntextBackend/IntextBackend.csproj",
+      "projectUniqueName": "/Users/kateopager/IntextII/backend/IntextBackend/IntextBackend.csproj",
       "projectName": "IntextBackend",
-      "projectPath": "/Users/betasan/BYU/Winter 2023/IntextII/backend/IntextBackend/IntextBackend.csproj",
-      "packagesPath": "/Users/betasan/.nuget/packages/",
-      "outputPath": "/Users/betasan/BYU/Winter 2023/IntextII/backend/IntextBackend/obj/",
+      "projectPath": "/Users/kateopager/IntextII/backend/IntextBackend/IntextBackend.csproj",
+      "packagesPath": "/Users/kateopager/.nuget/packages/",
+      "outputPath": "/Users/kateopager/IntextII/backend/IntextBackend/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/betasan/.nuget/NuGet/NuGet.Config"
+        "/Users/kateopager/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -271,7 +271,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -283,7 +284,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/6.0.106/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
       }
     }
   }
