@@ -7,6 +7,7 @@ import { UnsupervisedPage } from "../pages/UnsupervisedPage";
 import "./App.css";
 import Navbar from "./Navbar";
 import { PrivacyPage } from "../pages/PrivacyPage";
+import { CookieConsentBanner } from "../Cookies";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/privacy" element={<PrivacyPage />}></Route>
         </Routes>
       </BrowserRouter>
+      <CookieConsentBanner />
     </React.Fragment>
   );
 }

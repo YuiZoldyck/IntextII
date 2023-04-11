@@ -1,20 +1,49 @@
 ﻿<Properties StartupConfiguration="{98BF6904-265B-437F-94EF-03329CC1F7C0}|Default">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.IntextBackend PreferredExecutionTarget="/Applications/Firefox.app" FirstBuild="True" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Models/Burialmain.cs">
+    <Files>
+      <File FileName="Program.cs" />
+      <File FileName="Models/Book.cs" />
+      <File FileName="appsettings.json" />
+      <File FileName="Models/BurialmainBiological.cs" />
+      <File FileName="Models/YarnmanipulationTextile.cs" />
+      <File FileName="Models/Yarnmanipulation.cs" />
+      <File FileName="Models/Textilefunction.cs" />
+      <File FileName="Models/Structure.cs" />
+      <File FileName="Models/Decoration.cs" />
+      <File FileName="Models/C14.cs" />
+      <File FileName="Models/BurialmainTextile.cs" />
+      <File FileName="Models/Artifactfagelgamousregister.cs" />
+      <File FileName="Models/ArtifactfagelgamousregisterBurialmain.cs" />
+      <File FileName="Models/Artifactkomaushimregister.cs" />
+      <File FileName="Models/ArtifactkomaushimregisterBurialmain.cs" />
+      <File FileName="Models/Biological.cs" />
+      <File FileName="Models/Bodyanalysischart.cs" />
+      <File FileName="Models/BurialmainBodyanalysischart.cs" Line="9" Column="42" />
+      <File FileName="Models/Color.cs" />
+      <File FileName="Models/ColorTextile.cs" />
+      <File FileName="Models/Analysis.cs" />
+      <File FileName="Models/Textile.cs" Line="18" Column="2" />
+      <File FileName="Models/Burialmain.cs" Line="45" Column="1" NotebookId="1" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="IntextBackend" expanded="True" selected="True">
-            <Node name="IntextBackend" expanded="True" />
+          <Node name="IntextBackend" expanded="True">
+            <Node name="IntextBackend" expanded="True">
+              <Node name="Models" expanded="True">
+                <Node name="Burialmain.cs" selected="True" />
+              </Node>
+            </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.IntextBackend PreferredExecutionTarget="/Applications/Firefox.app" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
 </Properties>
