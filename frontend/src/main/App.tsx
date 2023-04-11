@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { IndexPage } from "../pages/IndexPage";
 import { BurialPage } from "../pages/BurialPage";
 import { SupervisedPage } from "../pages/SupervisedPage";
 import { UnsupervisedPage } from "../pages/UnsupervisedPage";
 import { LoginPage } from "../pages/LoginPage";
+import { RegisterPage } from "../pages/RegisterPage";
 import "./App.css";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
@@ -20,6 +21,7 @@ function App() {
           <Route path="/supervised" element={<SupervisedPage />}></Route>
           <Route path="/unsupervised" element={<UnsupervisedPage />}></Route>
           <Route path="/login" element={<LoginPage />}></Route>
+          <Route path="/register" element={<RegisterPage />}></Route>
         </Routes>
         <Footer />
       </BrowserRouter>

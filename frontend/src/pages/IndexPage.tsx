@@ -26,8 +26,6 @@ export function IndexPage() {
           <br />
           Click <a href="burial">here</a> to view all burials!
         </p>
-        <br />
-        <br />
       </div>
     </React.Fragment>
   );
