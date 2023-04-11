@@ -7,8 +7,8 @@ import { UnsupervisedPage } from "../pages/UnsupervisedPage";
 import { LoginPage } from "../pages/LoginPage";
 import { RegisterPage } from "../pages/RegisterPage";
 import "./App.css";
-import Navbar from "./Navbar";
 import Footer from "./Footer";
+import Navbar from "./Navbar";
 
 function App() {
   return (
