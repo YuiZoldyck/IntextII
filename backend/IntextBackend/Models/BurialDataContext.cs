@@ -18,6 +18,7 @@ namespace IntextBackend.Models
 
         public virtual DbSet<Analysis> Analyses { get; set; } = null!;
         public virtual DbSet<AnalysisTextile> AnalysisTextiles { get; set; } = null!;
+<<<<<<< HEAD
         public virtual DbSet<Artifactfagelgamousregister> Artifactfagelgamousregisters { get; set; } = null!;
         public virtual DbSet<ArtifactfagelgamousregisterBurialmain> ArtifactfagelgamousregisterBurialmains { get; set; } = null!;
         public virtual DbSet<Artifactkomaushimregister> Artifactkomaushimregisters { get; set; } = null!;
@@ -35,6 +36,16 @@ namespace IntextBackend.Models
         public virtual DbSet<Color> Colors { get; set; } = null!;
         public virtual DbSet<ColorTextile> ColorTextiles { get; set; } = null!;
         public virtual DbSet<Cranium> Crania { get; set; } = null!;
+=======
+        public virtual DbSet<Bodyanalysis> Bodyanalyses { get; set; } = null!;
+        public virtual DbSet<Bodyanalysiskey> Bodyanalysiskeys { get; set; } = null!;
+        public virtual DbSet<Book> Books { get; set; } = null!;
+        public virtual DbSet<Burialmain> Burialmains { get; set; } = null!;
+        public virtual DbSet<BurialmainBodyanalysis> BurialmainBodyanalyses { get; set; } = null!;
+        public virtual DbSet<BurialmainTextile> BurialmainTextiles { get; set; } = null!;
+        public virtual DbSet<Color> Colors { get; set; } = null!;
+        public virtual DbSet<ColorTextile> ColorTextiles { get; set; } = null!;
+>>>>>>> 2f603a0caa440934bee5582deee99505712bb959
         public virtual DbSet<Decoration> Decorations { get; set; } = null!;
         public virtual DbSet<DecorationTextile> DecorationTextiles { get; set; } = null!;
         public virtual DbSet<Dimension> Dimensions { get; set; } = null!;
@@ -57,7 +68,11 @@ namespace IntextBackend.Models
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
+<<<<<<< HEAD
                 optionsBuilder.UseNpgsql("Host=localhost;Database=BurialData; Username=postgres; password=animelife");
+=======
+                optionsBuilder.UseNpgsql("Host=burialdb.crkfqsi671m2.us-east-1.rds.amazonaws.com;Database=BurialData; Username=postgres; password=RootUser403");
+>>>>>>> 2f603a0caa440934bee5582deee99505712bb959
             }
         }
 
@@ -98,6 +113,7 @@ namespace IntextBackend.Models
                 entity.Property(e => e.MainTextileid).HasColumnName("main$textileid");
             });
 
+<<<<<<< HEAD
             modelBuilder.Entity<Artifactfagelgamousregister>(entity =>
             {
                 entity.ToTable("artifactfagelgamousregister");
@@ -360,6 +376,95 @@ namespace IntextBackend.Models
                 entity.Property(e => e.Tootheruptionageestimation).HasColumnName("tootheruptionageestimation");
 
                 entity.Property(e => e.Ventralarc).HasColumnName("ventralarc");
+=======
+            modelBuilder.Entity<Bodyanalysis>(entity =>
+            {
+                entity.ToTable("bodyanalysis");
+
+                entity.Property(e => e.BodyAnalysisId).HasDefaultValueSql("1");
+
+                entity.Property(e => e.CariesPeriodontalDisease)
+                    .HasColumnType("character varying")
+                    .HasColumnName("Caries_Periodontal_Disease");
+
+                entity.Property(e => e.DateOfExamination).HasMaxLength(40);
+
+                entity.Property(e => e.DorsalPitting).HasColumnType("character varying");
+
+                entity.Property(e => e.Femur).HasColumnType("character varying");
+
+                entity.Property(e => e.Gonion).HasColumnType("character varying");
+
+                entity.Property(e => e.HairColor).HasColumnType("character varying");
+
+                entity.Property(e => e.Humerus).HasColumnType("character varying");
+
+                entity.Property(e => e.LamboidSuture).HasColumnType("character varying");
+
+                entity.Property(e => e.MedialIpRamus)
+                    .HasColumnType("character varying")
+                    .HasColumnName("Medial_IP_Ramus");
+
+                entity.Property(e => e.Notes).HasColumnType("character varying");
+
+                entity.Property(e => e.NuchalCrest).HasColumnType("character varying");
+
+                entity.Property(e => e.Observations).HasColumnType("character varying");
+
+                entity.Property(e => e.OrbitEdge).HasColumnType("character varying");
+
+                entity.Property(e => e.Osteophytosis).HasColumnType("character varying");
+
+                entity.Property(e => e.ParietalBossing).HasColumnType("character varying");
+
+                entity.Property(e => e.PreauricularSulcus).HasColumnType("character varying");
+
+                entity.Property(e => e.PubicBone).HasColumnType("character varying");
+
+                entity.Property(e => e.Robust).HasColumnType("character varying");
+
+                entity.Property(e => e.SciaticNotch).HasColumnType("character varying");
+
+                entity.Property(e => e.SphenooccipitalSynchrondrosis).HasColumnType("character varying");
+
+                entity.Property(e => e.SquamosSuture).HasColumnType("character varying");
+
+                entity.Property(e => e.SubpubicAngle).HasColumnType("character varying");
+
+                entity.Property(e => e.SupraorbitalRidges).HasColumnType("character varying");
+
+                entity.Property(e => e.ToothAttrition).HasColumnType("character varying");
+
+                entity.Property(e => e.ToothEruption).HasColumnType("character varying");
+
+                entity.Property(e => e.ToothEruptionAgeEstimate).HasColumnType("character varying");
+
+                entity.Property(e => e.VentralArc).HasColumnType("character varying");
+
+                entity.Property(e => e.ZygomaticCrest).HasColumnType("character varying");
+            });
+
+            modelBuilder.Entity<Bodyanalysiskey>(entity =>
+            {
+                entity.ToTable("bodyanalysiskey");
+
+                entity.HasIndex(e => new { e.SquareNorthSouth, e.NorthSouth, e.SquareEastWest, e.EastWest, e.Area, e.BurialNumber }, "bodyanalysiskey_constraint")
+                    .IsUnique();
+
+                entity.Property(e => e.BodyAnalysisKeyId).ValueGeneratedNever();
+
+                entity.Property(e => e.Area).HasMaxLength(200);
+
+                entity.Property(e => e.BurialNumber).HasMaxLength(200);
+
+                entity.Property(e => e.EastWest).HasMaxLength(200);
+
+                entity.Property(e => e.NorthSouth).HasMaxLength(200);
+
+                entity.Property(e => e.SquareEastWest).HasMaxLength(200);
+
+                entity.Property(e => e.SquareNorthSouth).HasMaxLength(200);
+>>>>>>> 2f603a0caa440934bee5582deee99505712bb959
             });
 
             modelBuilder.Entity<Book>(entity =>
@@ -530,6 +635,7 @@ namespace IntextBackend.Models
                     .HasColumnName("wrapping");
             });
 
+<<<<<<< HEAD
             modelBuilder.Entity<BurialmainBiological>(entity =>
             {
                 entity.HasKey(e => new { e.MainBurialmainid, e.MainBiologicalid })
@@ -570,6 +676,15 @@ namespace IntextBackend.Models
                 entity.Property(e => e.MainBurialmainid).HasColumnName("main$burialmainid");
 
                 entity.Property(e => e.MainCraniumid).HasColumnName("main$craniumid");
+=======
+            modelBuilder.Entity<BurialmainBodyanalysis>(entity =>
+            {
+                entity.HasNoKey();
+
+                entity.ToTable("burialmain_bodyanalysis");
+
+                entity.Property(e => e.Id).HasColumnName("id");
+>>>>>>> 2f603a0caa440934bee5582deee99505712bb959
             });
 
             modelBuilder.Entity<BurialmainTextile>(entity =>
@@ -586,6 +701,7 @@ namespace IntextBackend.Models
                 entity.Property(e => e.MainTextileid).HasColumnName("main$textileid");
             });
 
+<<<<<<< HEAD
             modelBuilder.Entity<C14>(entity =>
             {
                 entity.ToTable("c14");
@@ -637,6 +753,8 @@ namespace IntextBackend.Models
                 entity.Property(e => e.Tubenumber).HasColumnName("tubenumber");
             });
 
+=======
+>>>>>>> 2f603a0caa440934bee5582deee99505712bb959
             modelBuilder.Entity<Color>(entity =>
             {
                 entity.ToTable("color");
@@ -666,6 +784,7 @@ namespace IntextBackend.Models
                 entity.Property(e => e.MainTextileid).HasColumnName("main$textileid");
             });
 
+<<<<<<< HEAD
             modelBuilder.Entity<Cranium>(entity =>
             {
                 entity.ToTable("cranium");
@@ -735,6 +854,8 @@ namespace IntextBackend.Models
                     .HasColumnName("naso_alpha__subtense");
             });
 
+=======
+>>>>>>> 2f603a0caa440934bee5582deee99505712bb959
             modelBuilder.Entity<Decoration>(entity =>
             {
                 entity.ToTable("decoration");

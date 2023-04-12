@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "/Users/betasan/BYU/Winter 2023/IntextII/backend/IntextBackend/IntextBackend.csproj": {}
   },
   "projects": {
@@ -15,6 +16,23 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/betasan/.nuget/NuGet/NuGet.Config"
+=======
+    "C:\\Users\\autum\\OneDrive\\Documents\\Winter2023\\Intex\\IntextII\\backend\\IntextBackend\\IntextBackend.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\autum\\OneDrive\\Documents\\Winter2023\\Intex\\IntextII\\backend\\IntextBackend\\IntextBackend.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\autum\\OneDrive\\Documents\\Winter2023\\Intex\\IntextII\\backend\\IntextBackend\\IntextBackend.csproj",
+        "projectName": "IntextBackend",
+        "projectPath": "C:\\Users\\autum\\OneDrive\\Documents\\Winter2023\\Intex\\IntextII\\backend\\IntextBackend\\IntextBackend.csproj",
+        "packagesPath": "C:\\Users\\autum\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\autum\\OneDrive\\Documents\\Winter2023\\Intex\\IntextII\\backend\\IntextBackend\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\autum\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+>>>>>>> 2f603a0caa440934bee5582deee99505712bb959
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -77,7 +95,11 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/6.0.106/RuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+>>>>>>> 2f603a0caa440934bee5582deee99505712bb959
         }
       }
     }
