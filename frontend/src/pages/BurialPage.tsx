@@ -1,7 +1,9 @@
+import { BurialList } from "../burial/BurialList";
+
 export function BurialPage() {
   return (
     <>
-      <h1>Burial</h1>
+      <BurialList />
     </>
   );
 }
