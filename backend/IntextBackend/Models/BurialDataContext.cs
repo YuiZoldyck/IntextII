@@ -18,25 +18,6 @@ namespace IntextBackend.Models
 
         public virtual DbSet<Analysis> Analyses { get; set; } = null!;
         public virtual DbSet<AnalysisTextile> AnalysisTextiles { get; set; } = null!;
-<<<<<<< HEAD
-        public virtual DbSet<Artifactfagelgamousregister> Artifactfagelgamousregisters { get; set; } = null!;
-        public virtual DbSet<ArtifactfagelgamousregisterBurialmain> ArtifactfagelgamousregisterBurialmains { get; set; } = null!;
-        public virtual DbSet<Artifactkomaushimregister> Artifactkomaushimregisters { get; set; } = null!;
-        public virtual DbSet<ArtifactkomaushimregisterBurialmain> ArtifactkomaushimregisterBurialmains { get; set; } = null!;
-        public virtual DbSet<Biological> Biologicals { get; set; } = null!;
-        public virtual DbSet<BiologicalC14> BiologicalC14s { get; set; } = null!;
-        public virtual DbSet<Bodyanalysischart> Bodyanalysischarts { get; set; } = null!;
-        public virtual DbSet<Book> Books { get; set; } = null!;
-        public virtual DbSet<Burialmain> Burialmains { get; set; } = null!;
-        public virtual DbSet<BurialmainBiological> BurialmainBiologicals { get; set; } = null!;
-        public virtual DbSet<BurialmainBodyanalysischart> BurialmainBodyanalysischarts { get; set; } = null!;
-        public virtual DbSet<BurialmainCranium> BurialmainCrania { get; set; } = null!;
-        public virtual DbSet<BurialmainTextile> BurialmainTextiles { get; set; } = null!;
-        public virtual DbSet<C14> C14s { get; set; } = null!;
-        public virtual DbSet<Color> Colors { get; set; } = null!;
-        public virtual DbSet<ColorTextile> ColorTextiles { get; set; } = null!;
-        public virtual DbSet<Cranium> Crania { get; set; } = null!;
-=======
         public virtual DbSet<Bodyanalysis> Bodyanalyses { get; set; } = null!;
         public virtual DbSet<Bodyanalysiskey> Bodyanalysiskeys { get; set; } = null!;
         public virtual DbSet<Book> Books { get; set; } = null!;
@@ -45,7 +26,6 @@ namespace IntextBackend.Models
         public virtual DbSet<BurialmainTextile> BurialmainTextiles { get; set; } = null!;
         public virtual DbSet<Color> Colors { get; set; } = null!;
         public virtual DbSet<ColorTextile> ColorTextiles { get; set; } = null!;
->>>>>>> 2f603a0caa440934bee5582deee99505712bb959
         public virtual DbSet<Decoration> Decorations { get; set; } = null!;
         public virtual DbSet<DecorationTextile> DecorationTextiles { get; set; } = null!;
         public virtual DbSet<Dimension> Dimensions { get; set; } = null!;
@@ -68,11 +48,7 @@ namespace IntextBackend.Models
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-<<<<<<< HEAD
-                optionsBuilder.UseNpgsql("Host=localhost;Database=BurialData; Username=postgres; password=animelife");
-=======
                 optionsBuilder.UseNpgsql("Host=burialdb.crkfqsi671m2.us-east-1.rds.amazonaws.com;Database=BurialData; Username=postgres; password=RootUser403");
->>>>>>> 2f603a0caa440934bee5582deee99505712bb959
             }
         }
 
@@ -113,270 +89,6 @@ namespace IntextBackend.Models
                 entity.Property(e => e.MainTextileid).HasColumnName("main$textileid");
             });
 
-<<<<<<< HEAD
-            modelBuilder.Entity<Artifactfagelgamousregister>(entity =>
-            {
-                entity.ToTable("artifactfagelgamousregister");
-
-                entity.Property(e => e.Id)
-                    .ValueGeneratedNever()
-                    .HasColumnName("id");
-
-                entity.Property(e => e.Coordinateset)
-                    .HasMaxLength(200)
-                    .HasColumnName("coordinateset");
-
-                entity.Property(e => e.Notes).HasColumnName("notes");
-
-                entity.Property(e => e.Photographed)
-                    .HasMaxLength(3)
-                    .HasColumnName("photographed");
-
-                entity.Property(e => e.Registernum)
-                    .HasMaxLength(30)
-                    .HasColumnName("registernum");
-            });
-
-            modelBuilder.Entity<ArtifactfagelgamousregisterBurialmain>(entity =>
-            {
-                entity.HasKey(e => new { e.MainArtifactfagelgamousregisterid, e.MainBurialmainid })
-                    .HasName("main$artifactfagelgamousregister_burialmain_pkey");
-
-                entity.ToTable("artifactfagelgamousregister_burialmain");
-
-                entity.HasIndex(e => new { e.MainBurialmainid, e.MainArtifactfagelgamousregisterid }, "idx_main$artifactfagelgamousregister_burialmain");
-
-                entity.Property(e => e.MainArtifactfagelgamousregisterid).HasColumnName("main$artifactfagelgamousregisterid");
-
-                entity.Property(e => e.MainBurialmainid).HasColumnName("main$burialmainid");
-            });
-
-            modelBuilder.Entity<Artifactkomaushimregister>(entity =>
-            {
-                entity.ToTable("artifactkomaushimregister");
-
-                entity.Property(e => e.Id)
-                    .ValueGeneratedNever()
-                    .HasColumnName("id");
-
-                entity.Property(e => e.Currentlocation)
-                    .HasMaxLength(200)
-                    .HasColumnName("currentlocation");
-
-                entity.Property(e => e.Date)
-                    .HasMaxLength(200)
-                    .HasColumnName("date");
-
-                entity.Property(e => e.Description)
-                    .HasMaxLength(500)
-                    .HasColumnName("description");
-
-                entity.Property(e => e.Dimensions)
-                    .HasMaxLength(200)
-                    .HasColumnName("dimensions");
-
-                entity.Property(e => e.Entrydate)
-                    .HasColumnType("timestamp without time zone")
-                    .HasColumnName("entrydate");
-
-                entity.Property(e => e.Excavatornum)
-                    .HasMaxLength(200)
-                    .HasColumnName("excavatornum");
-
-                entity.Property(e => e.Finder)
-                    .HasMaxLength(200)
-                    .HasColumnName("finder");
-
-                entity.Property(e => e.Material)
-                    .HasMaxLength(200)
-                    .HasColumnName("material");
-
-                entity.Property(e => e.Number)
-                    .HasMaxLength(200)
-                    .HasColumnName("number");
-
-                entity.Property(e => e.Photos)
-                    .HasMaxLength(3)
-                    .HasColumnName("photos");
-
-                entity.Property(e => e.Position)
-                    .HasMaxLength(200)
-                    .HasColumnName("position");
-
-                entity.Property(e => e.Provenance)
-                    .HasMaxLength(200)
-                    .HasColumnName("provenance");
-
-                entity.Property(e => e.Qualityphotos)
-                    .HasMaxLength(3)
-                    .HasColumnName("qualityphotos");
-
-                entity.Property(e => e.Rehousedto)
-                    .HasMaxLength(200)
-                    .HasColumnName("rehousedto");
-
-                entity.Property(e => e.Remarks)
-                    .HasMaxLength(500)
-                    .HasColumnName("remarks");
-            });
-
-            modelBuilder.Entity<ArtifactkomaushimregisterBurialmain>(entity =>
-            {
-                entity.HasKey(e => new { e.MainArtifactkomaushimregisterid, e.MainBurialmainid })
-                    .HasName("main$artifactqumoshimregistrar_burialmain_pkey");
-
-                entity.ToTable("artifactkomaushimregister_burialmain");
-
-                entity.HasIndex(e => new { e.MainBurialmainid, e.MainArtifactkomaushimregisterid }, "idx_main$artifactkomaushimregister_burialmain");
-
-                entity.Property(e => e.MainArtifactkomaushimregisterid).HasColumnName("main$artifactkomaushimregisterid");
-
-                entity.Property(e => e.MainBurialmainid).HasColumnName("main$burialmainid");
-            });
-
-            modelBuilder.Entity<Biological>(entity =>
-            {
-                entity.ToTable("biological");
-
-                entity.Property(e => e.Id)
-                    .ValueGeneratedNever()
-                    .HasColumnName("id");
-
-                entity.Property(e => e.Bagnumber).HasColumnName("bagnumber");
-
-                entity.Property(e => e.Clusternumber).HasColumnName("clusternumber");
-
-                entity.Property(e => e.Date)
-                    .HasColumnType("timestamp without time zone")
-                    .HasColumnName("date");
-
-                entity.Property(e => e.Initials)
-                    .HasMaxLength(200)
-                    .HasColumnName("initials");
-
-                entity.Property(e => e.Notes)
-                    .HasMaxLength(2000)
-                    .HasColumnName("notes");
-
-                entity.Property(e => e.Previouslysampled)
-                    .HasMaxLength(200)
-                    .HasColumnName("previouslysampled");
-
-                entity.Property(e => e.Racknumber).HasColumnName("racknumber");
-            });
-
-            modelBuilder.Entity<BiologicalC14>(entity =>
-            {
-                entity.HasKey(e => new { e.MainBiologicalid, e.MainC14id })
-                    .HasName("main$biological_c14_pkey");
-
-                entity.ToTable("biological_c14");
-
-                entity.HasIndex(e => new { e.MainC14id, e.MainBiologicalid }, "idx_main$biological_c14_main$c14_main$biological");
-
-                entity.Property(e => e.MainBiologicalid).HasColumnName("main$biologicalid");
-
-                entity.Property(e => e.MainC14id).HasColumnName("main$c14id");
-            });
-
-            modelBuilder.Entity<Bodyanalysischart>(entity =>
-            {
-                entity.ToTable("bodyanalysischart");
-
-                entity.Property(e => e.Id)
-                    .ValueGeneratedNever()
-                    .HasColumnName("id");
-
-                entity.Property(e => e.CariesPeriodontalDisease)
-                    .HasMaxLength(200)
-                    .HasColumnName("caries_periodontal_disease");
-
-                entity.Property(e => e.Estimatestature).HasColumnName("estimatestature");
-
-                entity.Property(e => e.Femur)
-                    .HasMaxLength(200)
-                    .HasColumnName("femur");
-
-                entity.Property(e => e.Femurheaddiameter)
-                    .HasMaxLength(200)
-                    .HasColumnName("femurheaddiameter");
-
-                entity.Property(e => e.Femurlength).HasColumnName("femurlength");
-
-                entity.Property(e => e.Gonion)
-                    .HasMaxLength(200)
-                    .HasColumnName("gonion");
-
-                entity.Property(e => e.Humerus)
-                    .HasMaxLength(200)
-                    .HasColumnName("humerus");
-
-                entity.Property(e => e.Humerusheaddiameter)
-                    .HasMaxLength(200)
-                    .HasColumnName("humerusheaddiameter");
-
-                entity.Property(e => e.Humeruslength).HasColumnName("humeruslength");
-
-                entity.Property(e => e.Lambdoidsuture)
-                    .HasMaxLength(200)
-                    .HasColumnName("lambdoidsuture");
-
-                entity.Property(e => e.MedicalIpRamus)
-                    .HasMaxLength(200)
-                    .HasColumnName("medical_ip_ramus");
-
-                entity.Property(e => e.Notes)
-                    .HasMaxLength(2000)
-                    .HasColumnName("notes");
-
-                entity.Property(e => e.Nuchalcrest)
-                    .HasMaxLength(200)
-                    .HasColumnName("nuchalcrest");
-
-                entity.Property(e => e.Observations)
-                    .HasColumnType("character varying")
-                    .HasColumnName("observations");
-
-                entity.Property(e => e.Orbitedge)
-                    .HasMaxLength(200)
-                    .HasColumnName("orbitedge");
-
-                entity.Property(e => e.Osteophytosis)
-                    .HasMaxLength(200)
-                    .HasColumnName("osteophytosis");
-
-                entity.Property(e => e.Parietalblossing).HasColumnName("parietalblossing");
-
-                entity.Property(e => e.Perservationindex).HasColumnName("perservationindex");
-
-                entity.Property(e => e.Robust).HasColumnName("robust");
-
-                entity.Property(e => e.Sciaticnotch)
-                    .HasMaxLength(200)
-                    .HasColumnName("sciaticnotch");
-
-                entity.Property(e => e.Sphenooccipitalsynchondrosis)
-                    .HasMaxLength(200)
-                    .HasColumnName("sphenooccipitalsynchondrosis");
-
-                entity.Property(e => e.Squamossuture)
-                    .HasMaxLength(200)
-                    .HasColumnName("squamossuture");
-
-                entity.Property(e => e.Subpubicangle)
-                    .HasMaxLength(200)
-                    .HasColumnName("subpubicangle");
-
-                entity.Property(e => e.Supraorbitalridges)
-                    .HasMaxLength(200)
-                    .HasColumnName("supraorbitalridges");
-
-                entity.Property(e => e.Toothattrition).HasColumnName("toothattrition");
-
-                entity.Property(e => e.Tootheruptionageestimation).HasColumnName("tootheruptionageestimation");
-
-                entity.Property(e => e.Ventralarc).HasColumnName("ventralarc");
-=======
             modelBuilder.Entity<Bodyanalysis>(entity =>
             {
                 entity.ToTable("bodyanalysis");
@@ -464,7 +176,6 @@ namespace IntextBackend.Models
                 entity.Property(e => e.SquareEastWest).HasMaxLength(200);
 
                 entity.Property(e => e.SquareNorthSouth).HasMaxLength(200);
->>>>>>> 2f603a0caa440934bee5582deee99505712bb959
             });
 
             modelBuilder.Entity<Book>(entity =>
@@ -635,48 +346,6 @@ namespace IntextBackend.Models
                     .HasColumnName("wrapping");
             });
 
-<<<<<<< HEAD
-            modelBuilder.Entity<BurialmainBiological>(entity =>
-            {
-                entity.HasKey(e => new { e.MainBurialmainid, e.MainBiologicalid })
-                    .HasName("main$burialmain_biological_pkey");
-
-                entity.ToTable("burialmain_biological");
-
-                entity.HasIndex(e => new { e.MainBiologicalid, e.MainBurialmainid }, "idx_main$burialmain_biological_main$biological_main$burialmain");
-
-                entity.Property(e => e.MainBurialmainid).HasColumnName("main$burialmainid");
-
-                entity.Property(e => e.MainBiologicalid).HasColumnName("main$biologicalid");
-            });
-
-            modelBuilder.Entity<BurialmainBodyanalysischart>(entity =>
-            {
-                entity.HasKey(e => new { e.MainBurialmainid, e.MainBodyanalysischartid })
-                    .HasName("main$burialmain_bodyanalysischart_pkey");
-
-                entity.ToTable("burialmain_bodyanalysischart");
-
-                entity.HasIndex(e => new { e.MainBodyanalysischartid, e.MainBurialmainid }, "idx_main$burialmain_bodyanalysischart");
-
-                entity.Property(e => e.MainBurialmainid).HasColumnName("main$burialmainid");
-
-                entity.Property(e => e.MainBodyanalysischartid).HasColumnName("main$bodyanalysischartid");
-            });
-
-            modelBuilder.Entity<BurialmainCranium>(entity =>
-            {
-                entity.HasKey(e => new { e.MainBurialmainid, e.MainCraniumid })
-                    .HasName("main$burialmain_cranium_pkey");
-
-                entity.ToTable("burialmain_cranium");
-
-                entity.HasIndex(e => new { e.MainCraniumid, e.MainBurialmainid }, "idx_main$burialmain_cranium_main$cranium_main$burialmain");
-
-                entity.Property(e => e.MainBurialmainid).HasColumnName("main$burialmainid");
-
-                entity.Property(e => e.MainCraniumid).HasColumnName("main$craniumid");
-=======
             modelBuilder.Entity<BurialmainBodyanalysis>(entity =>
             {
                 entity.HasNoKey();
@@ -684,7 +353,6 @@ namespace IntextBackend.Models
                 entity.ToTable("burialmain_bodyanalysis");
 
                 entity.Property(e => e.Id).HasColumnName("id");
->>>>>>> 2f603a0caa440934bee5582deee99505712bb959
             });
 
             modelBuilder.Entity<BurialmainTextile>(entity =>
@@ -701,60 +369,6 @@ namespace IntextBackend.Models
                 entity.Property(e => e.MainTextileid).HasColumnName("main$textileid");
             });
 
-<<<<<<< HEAD
-            modelBuilder.Entity<C14>(entity =>
-            {
-                entity.ToTable("c14");
-
-                entity.Property(e => e.Id)
-                    .ValueGeneratedNever()
-                    .HasColumnName("id");
-
-                entity.Property(e => e.Agebp).HasColumnName("agebp");
-
-                entity.Property(e => e.C14lab)
-                    .HasMaxLength(200)
-                    .HasColumnName("c14lab");
-
-                entity.Property(e => e.Calendardate).HasColumnName("calendardate");
-
-                entity.Property(e => e.Calibrateddateavg).HasColumnName("calibrateddateavg");
-
-                entity.Property(e => e.Calibrateddatemax).HasColumnName("calibrateddatemax");
-
-                entity.Property(e => e.Calibrateddatemin).HasColumnName("calibrateddatemin");
-
-                entity.Property(e => e.Calibratedspan).HasColumnName("calibratedspan");
-
-                entity.Property(e => e.Category)
-                    .HasMaxLength(200)
-                    .HasColumnName("category");
-
-                entity.Property(e => e.Description)
-                    .HasMaxLength(2000)
-                    .HasColumnName("description");
-
-                entity.Property(e => e.Foci)
-                    .HasMaxLength(200)
-                    .HasColumnName("foci");
-
-                entity.Property(e => e.Location)
-                    .HasMaxLength(2000)
-                    .HasColumnName("location");
-
-                entity.Property(e => e.Questions)
-                    .HasMaxLength(2000)
-                    .HasColumnName("questions");
-
-                entity.Property(e => e.Rack).HasColumnName("rack");
-
-                entity.Property(e => e.Size).HasColumnName("size");
-
-                entity.Property(e => e.Tubenumber).HasColumnName("tubenumber");
-            });
-
-=======
->>>>>>> 2f603a0caa440934bee5582deee99505712bb959
             modelBuilder.Entity<Color>(entity =>
             {
                 entity.ToTable("color");
@@ -784,78 +398,6 @@ namespace IntextBackend.Models
                 entity.Property(e => e.MainTextileid).HasColumnName("main$textileid");
             });
 
-<<<<<<< HEAD
-            modelBuilder.Entity<Cranium>(entity =>
-            {
-                entity.ToTable("cranium");
-
-                entity.Property(e => e.Id)
-                    .ValueGeneratedNever()
-                    .HasColumnName("id");
-
-                entity.Property(e => e.AlphaCore)
-                    .HasPrecision(28, 8)
-                    .HasColumnName("alpha_core");
-
-                entity.Property(e => e.BasionBregmaHeight)
-                    .HasPrecision(28, 8)
-                    .HasColumnName("basion_bregma_height");
-
-                entity.Property(e => e.BasionNasion)
-                    .HasPrecision(28, 8)
-                    .HasColumnName("basion_nasion");
-
-                entity.Property(e => e.BasionProsthionLength)
-                    .HasPrecision(28, 8)
-                    .HasColumnName("basion_prosthion_length");
-
-                entity.Property(e => e.BizygomaticDiameter)
-                    .HasPrecision(28, 8)
-                    .HasColumnName("bizygomatic_diameter");
-
-                entity.Property(e => e.InterobitalBreadth)
-                    .HasPrecision(28, 8)
-                    .HasColumnName("interobital_breadth");
-
-                entity.Property(e => e.InterorbitalBreadth)
-                    .HasPrecision(28, 8)
-                    .HasColumnName("interorbital_breadth");
-
-                entity.Property(e => e.InterorbitalSubtense)
-                    .HasPrecision(28, 8)
-                    .HasColumnName("interorbital_subtense");
-
-                entity.Property(e => e.MaxNasalBreadth)
-                    .HasPrecision(28, 8)
-                    .HasColumnName("max_nasal_breadth");
-
-                entity.Property(e => e.Maxcraniumbreadth)
-                    .HasPrecision(28, 8)
-                    .HasColumnName("maxcraniumbreadth");
-
-                entity.Property(e => e.Maxcraniumlength)
-                    .HasPrecision(28, 8)
-                    .HasColumnName("maxcraniumlength");
-
-                entity.Property(e => e.MidOrbitalBreadth)
-                    .HasPrecision(28, 8)
-                    .HasColumnName("mid_orbital_breadth");
-
-                entity.Property(e => e.MidOrbitalSubtense)
-                    .HasPrecision(28, 8)
-                    .HasColumnName("mid_orbital_subtense");
-
-                entity.Property(e => e.NasionProsthionUpper)
-                    .HasPrecision(28, 8)
-                    .HasColumnName("nasion_prosthion_upper");
-
-                entity.Property(e => e.NasoAlphaSubtense)
-                    .HasPrecision(28, 8)
-                    .HasColumnName("naso_alpha__subtense");
-            });
-
-=======
->>>>>>> 2f603a0caa440934bee5582deee99505712bb959
             modelBuilder.Entity<Decoration>(entity =>
             {
                 entity.ToTable("decoration");
