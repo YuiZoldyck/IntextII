@@ -1,20 +1,23 @@
-﻿<Properties StartupConfiguration="{98BF6904-265B-437F-94EF-03329CC1F7C0}|Default">
+﻿<Properties>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.IntextBackend PreferredExecutionTarget="/Applications/Firefox.app" FirstBuild="True" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
+    <Files>
+      <File FileName="Program.cs" Line="1" Column="1" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="IntextBackend" expanded="True" selected="True">
-            <Node name="IntextBackend" expanded="True" />
+          <Node name="IntextBackend" expanded="True">
+            <Node name="IntextBackend" selected="True" />
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.IntextBackend FirstBuild="True" PreferredExecutionTarget="/Applications/Firefox.app" />
 </Properties>
