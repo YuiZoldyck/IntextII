@@ -224,25 +224,11 @@
     ]
   },
   "packageFolders": {
-<<<<<<< HEAD
-    "/Users/kateopager/.nuget/packages/": {}
-=======
     "C:\\Users\\autum\\.nuget\\packages\\": {}
->>>>>>> 2f2e95cad5cf5fc7146d8dd372a2d3209e73c593
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-      "projectUniqueName": "/Users/kateopager/IntextII/backend/IntextBackend/IntextBackend.csproj",
-      "projectName": "IntextBackend",
-      "projectPath": "/Users/kateopager/IntextII/backend/IntextBackend/IntextBackend.csproj",
-      "packagesPath": "/Users/kateopager/.nuget/packages/",
-      "outputPath": "/Users/kateopager/IntextII/backend/IntextBackend/obj/",
-      "projectStyle": "PackageReference",
-      "configFilePaths": [
-        "/Users/kateopager/.nuget/NuGet/NuGet.Config"
-=======
       "projectUniqueName": "C:\\Users\\autum\\OneDrive\\Documents\\Winter2023\\Intex\\IntextII\\backend\\IntextBackend\\IntextBackend.csproj",
       "projectName": "IntextBackend",
       "projectPath": "C:\\Users\\autum\\OneDrive\\Documents\\Winter2023\\Intex\\IntextII\\backend\\IntextBackend\\IntextBackend.csproj",
@@ -252,7 +238,6 @@
       "configFilePaths": [
         "C:\\Users\\autum\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
->>>>>>> 2f2e95cad5cf5fc7146d8dd372a2d3209e73c593
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -301,12 +286,16 @@
             "privateAssets": "all"
           }
         },
-<<<<<<< HEAD
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
-=======
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
->>>>>>> 2f2e95cad5cf5fc7146d8dd372a2d3209e73c593
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\autum\\OneDrive\\Documents\\Winter2023\\Intex\\IntextII\\backend\\IntextBackend\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

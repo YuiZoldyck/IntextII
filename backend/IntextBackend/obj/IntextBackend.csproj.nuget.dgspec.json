@@ -1,22 +1,6 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
-    "/Users/kateopager/IntextII/backend/IntextBackend/IntextBackend.csproj": {}
-  },
-  "projects": {
-    "/Users/kateopager/IntextII/backend/IntextBackend/IntextBackend.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "/Users/kateopager/IntextII/backend/IntextBackend/IntextBackend.csproj",
-        "projectName": "IntextBackend",
-        "projectPath": "/Users/kateopager/IntextII/backend/IntextBackend/IntextBackend.csproj",
-        "packagesPath": "/Users/kateopager/.nuget/packages/",
-        "outputPath": "/Users/kateopager/IntextII/backend/IntextBackend/obj/",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "/Users/kateopager/.nuget/NuGet/NuGet.Config"
-=======
     "C:\\Users\\autum\\OneDrive\\Documents\\Winter2023\\Intex\\IntextII\\backend\\IntextBackend\\IntextBackend.csproj": {}
   },
   "projects": {
@@ -32,7 +16,6 @@
         "configFilePaths": [
           "C:\\Users\\autum\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
->>>>>>> 2f2e95cad5cf5fc7146d8dd372a2d3209e73c593
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -81,11 +64,7 @@
               "privateAssets": "all"
             }
           },
-<<<<<<< HEAD
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
-=======
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
->>>>>>> 2f2e95cad5cf5fc7146d8dd372a2d3209e73c593
         }
       }
     }
